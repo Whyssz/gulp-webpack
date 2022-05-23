@@ -4,10 +4,17 @@
 @import "vars";
 @import "icomoon";
 
-
 //Blocks @import "./blocks/html/main";
-
 // @import "./blocks/main/main";
+
+
+
+//rule img/icon only - ../img (@img)
+// div{
+//   &:after{ <-- 
+//     background: url(@img/icons/arrow.png);
+//   }
+// }
 
 
 //Media
