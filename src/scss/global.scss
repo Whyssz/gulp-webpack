@@ -2,12 +2,17 @@ html{
   box-sizing: border-box;
 }
 *,*::after,*::before{
+  width: 0;
+  height: 0;
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 html,
 body {
   height: 100%;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 a {
   display: inline-block;
@@ -23,12 +28,12 @@ p{
   margin: 0;
   padding: 0;
 }
-ul,
-li{
+ul,li{
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 body{
   overflow-x: hidden;
   //font-family: 'Open Sans', sans-serif;
@@ -57,9 +62,4 @@ body{
   max-width: 100%;
   margin: 0 auto;
   padding: 0 30px;
-}
-@media (max-width: 720px) {
-  .container-fluid{
-    padding: 0 15px;
-  }
 }

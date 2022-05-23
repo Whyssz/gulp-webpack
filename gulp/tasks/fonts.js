@@ -14,8 +14,8 @@ export const otfToTtf = () => {
     .pipe(fonter({
       formats: ['ttf']
     }))
-    .pipe(app.gulp.dest(`${app.path.srcFolder}/fonts/`))
-}
+    .pipe(app.gulp.dest(`${app.path.srcFolder}/fonts/`));
+};
 
 export const ttfToWoff = () => {
   return app.gulp.src(`${app.path.srcFolder}/fonts/*.ttf`, {})
@@ -31,18 +31,18 @@ export const ttfToWoff = () => {
     .pipe(app.gulp.dest(`${app.path.build.fonts}`))
     .pipe(app.gulp.src(`${app.path.srcFolder}/fonts/*.ttf`))
     .pipe(ttf2woff2())
-    .pipe(app.gulp.dest(`${app.path.build.fonts}`))
-}
+    .pipe(app.gulp.dest(`${app.path.build.fonts}`));
+};
 
 export const fontsStyle = () => {
   let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
   fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
     if (fontsFiles){
       if (!fs.existsSync(fontsFile)){
-        fs.writeFile(fontsFile, '', cb)
+        fs.writeFile(fontsFile, '', cb);
         let newFileOnly;
         for (let i = 0; i < fontsFiles.length; i++){
-          let fontFileName = fontsFiles[i].split('.')[0]
+          let fontFileName = fontsFiles[i].split('.')[0];
           if (newFileOnly !== fontFileName) {
             let fontName = fontFileName.split('-')[0] ? fontFileName.split('-')[0] : fontFileName;
             let fontWeight = fontFileName.split('-')[1] ? fontFileName.split('-')[1] : fontFileName;
@@ -70,10 +70,10 @@ export const fontsStyle = () => {
           }
         }
       } else {
-        console.log('Файлы scss/fonts.scss уже существует. Для обновления нужно его удалить.')
+        console.log('Файлы scss/fonts.scss уже существует. Для обновления нужно его удалить.');
       }
     }
   });
   return app.gulp.src(`${app.path.srcFolder}`);
   function cb() { }
-}
+};

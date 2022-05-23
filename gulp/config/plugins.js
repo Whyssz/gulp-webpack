@@ -2,7 +2,7 @@ import plumber from "gulp-plumber";
 import notify from "gulp-notify";
 import browsersync from "browser-sync";
 import newer from "gulp-newer";
-import ifPlugins from "gulp-if";
+import ifPlugins from "gulp-if";  
 
 
 export const plugins = {
@@ -11,4 +11,4 @@ export const plugins = {
   browsersync: browsersync,
   newer: newer,
   if: ifPlugins
-}
+};
