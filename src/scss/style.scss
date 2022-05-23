@@ -1,13 +1,14 @@
+//Global settings
 @import "global";
 @import "fonts";
 @import "vars";
 @import "icomoon";
 
 
-.test{
-  color: green;
-}
+//Blocks @import "./blocks/html/main";
+
+// @import "./blocks/main/main";
 
 
-
+//Media
 @import "media";

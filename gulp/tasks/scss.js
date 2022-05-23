@@ -20,6 +20,9 @@ export const scss = () => {
     .pipe(sass({
       outputStyle: 'expanded'
     }))
+    .pipe(rename({
+      extname: '.min.css'
+    }))
     .pipe(
       app.plugins.if(
         app.isBuild,
@@ -52,10 +55,6 @@ export const scss = () => {
         cleanCss()
       )
     )
-
-    .pipe(rename({
-      extname: '.min.css'
-    }))
     .pipe(app.gulp.dest(app.path.build.css))
     .pipe(app.plugins.browsersync.stream());
-}
+};
