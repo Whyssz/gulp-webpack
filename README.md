@@ -21,15 +21,19 @@ ___Исключение___
 
 ___Особенность___
 
-В работи используется плагин [Markdown Preview Enhanced ported to vscode](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) для создания `alias - shortcuts`. Если вы работает в других IDE, то можете оставить всё как есть и не пользоваться его функциями, пока всё работает и без его установки, но сверяйте пути, которые будут получаться в итоговой папке ли путь в готовой папке `dist`.
+В работи используется плагин [Markdown Preview Enhanced ported to vscode](https://code.visualstudio.com/docs/languages/markdown) для создания `alias - shortcuts`. Если вы работает в других IDE, то можете оставить всё как есть и не пользоваться его функциями, пока всё работает и без его установки, но сверяйте пути, которые будут получаться в итоговой папке ли путь в готовой папке `dist`.
 
 # Установка 
 
 * Предустановить `node.js` 
 * Желательно использовать `git/bash`
-* Установить плагин [Markdown Preview Enhanced ported to vscode](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) **можно работать и без него**, но если не работаете с ним, то лучше удалить мёртвый код [~30 минута ролика =)](https://www.youtube.com/watch?v=jU88mLuLWlk).
+* Установить плагин [shortcuts](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) **можно работать и без него**, но если не работаете с ним, то лучше удалить мёртвый код [~30 минута ролика =)](https://www.youtube.com/watch?v=jU88mLuLWlk).
 * Скачать сборку, прописать команду `npm i`
 
+ **For advanced users** 
+ ```shell
+ git clone https://github.com/Whyssz/gulp-webpack.git
+ ```
 
 # Режимы работы
  
