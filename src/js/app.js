@@ -1,6 +1,13 @@
 import * as flsFunctions from './modules/functions.js';
 
-flsFunctions.isWeb();
+window.addEventListener('DOMContentLoaded',() => {
+  'use strict';
+
+
+  
+  console.log('test is success');
+  flsFunctions.isWeb();
+});
 
 // import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 

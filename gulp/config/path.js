@@ -2,7 +2,8 @@ import * as nodePath from 'path';
 const rootFolder = nodePath.basename(nodePath.resolve());
 
 const buildFolder = `./dist`;
-const srcFolder = `./src`;
+const srcFolder = `./src/assets`;
+const src = `./src`;
 
 export const path = {
   build: {
@@ -14,17 +15,17 @@ export const path = {
     files: `${buildFolder}/files/`,
   },
   src: {
-    js: `${srcFolder}/js/app.js`,
+    js: `${src}/js/app.js`,
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
     svg: `${srcFolder}/img/**/*.svg`,
     scss: `${srcFolder}/scss/style.scss`,
-    html: `${srcFolder}/*.html`,
+    html: `${src}/*.html`,
     files: `${srcFolder}/files/**/*.*`,
   },
   watch: {
-    js: `${srcFolder}/js/**/*.js`,
+    js: `${src}/js/**/*.js`,
     scss: `${srcFolder}/scss/**/*.scss`,
-    html: `${srcFolder}/**/*.html`,
+    html: `${src}/**/*.html`,
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,svg,webp}`,
     files: `${srcFolder}/files/**/*.*`,
   },
